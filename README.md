@@ -1,3 +1,5 @@
+_University Course Assignment_
+
 # PasswordEntropyCalculator
 
 I set myself the following additional goal (devised by me):
