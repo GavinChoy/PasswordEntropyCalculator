@@ -25,6 +25,7 @@ double calculate_entropy(bool lower_alpha, bool upper_alpha, bool numbers, bool 
 
 int main(){
 
+    cout << endl;
     cout << "Password Entropy Calculator  Copyright (C) 2021  Gavin Choy\n";
     cout << "This program comes with ABSOLUTELY NO WARRANTY.\n";
     cout << "This is free software, and you are welcome to redistribute it\n";
@@ -43,6 +44,7 @@ int main(){
     while ((response != "y") && (response != "n")){
         cout << "Does your password have lower case alphabetic characters? (y/n)" << endl;
         cin >> response;
+        cout << endl;
 
         if (response == "y"){
             lower_alpha = true;
@@ -53,6 +55,7 @@ int main(){
     while ((response != "y") && (response != "n")){
         cout << "Does your password have upper case alphabetic characters? (y/n)" << endl;
         cin >> response;
+        cout << endl;
 
         if (response     == "y"){
             upper_alpha = true;
@@ -63,6 +66,7 @@ int main(){
     while ((response != "y") && (response != "n")){
         cout << "Does your password have numeric characters? (y/n)" << endl;
         cin >> response;
+        cout << endl;
 
         if (response == "y"){
             numbers = true;
@@ -73,6 +77,7 @@ int main(){
     while ((response != "y") && (response != "n")){
         cout << "Does your password have special characters? (y/n)" << endl;
         cin >> response;
+        cout << endl;
 
         if (response == "y"){
             special = true;
@@ -81,6 +86,7 @@ int main(){
 
     cout << "How many characters are in your password?" << endl;
     cin >> length;
+    cout << endl;
 
     cout << "The estimated entropy of your password is " << calculate_entropy(lower_alpha, upper_alpha, numbers, special, length) << " bits." << endl;
     return 0;

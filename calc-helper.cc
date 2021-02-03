@@ -19,8 +19,8 @@
 double calculate_entropy(bool lower_alpha, bool upper_alpha, bool numbers, bool special, int length){
     /**
     * Returns the bits of entropy given the password properties.
-    * @param lower_alpha Boolean whether there exists a lower case alphabet in the password.
-    * @param upper_alpha Boolean whether there exists an uppper case alphabet in the password.
+    * @param lower_alpha Boolean whether there exists a lower case alphabetic character in the password.
+    * @param upper_alpha Boolean whether there exists an uppper case alphabetic character in the password.
     * @param numbers Boolean whether there exists a numeric character in the password.
     * @param special Boolean whether there exists a special character in the password.
     * @param length The length of the password.
